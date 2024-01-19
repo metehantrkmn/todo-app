@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* height: 200vh; */
+}
+
+.outer-container {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  /*   border: solid 1px;
+  border-radius: 15px;
+  border-color: rgb(188, 119, 253);
+  padding: 1em; */
+}
+
+.myHeader {
+  width: 100%;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger-menu-button img {
+  max-width: 30px;
+  background-color: rgb(188, 119, 253);
+  border: 0px;
+}
+
+.hamburger-menu-button {
+  border: 0px;
+  background-color: rgb(188, 119, 253);
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(188, 119, 253);
+  display: flex;
+  padding: 1em;
+  height: 4.5em;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  font-size: x-large;
+}
+
+.navList {
+  display: none;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 4.5em;
+  background-color: rgb(188, 119, 253);
+  padding: 0.4em 1em;
+}
+
+.navLinks {
+  padding: 0.5em 0em;
+}
+
+.displayOption {
+  display: block;
+}
+
+.Modal {
+  width: 60%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding: 2em;
+  opacity: 1;
+  border: solid 1px;
+  border-color: rgb(188, 119, 253);
+  border-radius: 15px;
+  z-index: 999;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 998;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.close-button {
+  /*   position: absolute;
+  top: 20px;
+  right: 20px; */
+  position: relative;
+  float: right;
+  background-color: white;
+  border: 0px;
+}
+
+.todo-close-button {
+  position: relative;
+  float: right;
+  background-color: white;
+  border: 0px;
+}
+
+.close-icon {
+  width: 2em;
+  height: auto;
+}
+
+.little {
+  width: 1em;
+  height: auto;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.input-group h1 {
+  margin-bottom: 0.3em;
+}
+
+.input-bar {
+  width: 100%;
+  height: 3em;
+  border-color: rgb(188, 119, 253);
+  border-radius: 11px;
+  font-size: large;
+}
+
+.modal-submit-button {
+  position: relative;
+  float: right;
+}
+
+.modal-submit-button button {
+  border: 0px;
+  border-radius: 25px;
+  width: max-content;
+  padding: 1em;
+  color: white;
+  font-size: medium;
+  background-color: rgb(188, 119, 253);
+}
+
+.btn-default {
+  border: 0px;
+  border-radius: 25px;
+  width: max-content;
+  padding: 1em;
+  color: white;
+  font-size: medium;
+}
+
+.add-button {
+  float: right;
+  margin-top: 2em;
+}
+
+.todo {
+  border: solid 1px;
+  border-radius: 15px;
+  border-color: rgb(188, 119, 253);
+  padding: 2em;
+  margin-top: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.todo-heading {
+  margin-bottom: 0.4em;
+}
+
+.todo-text {
+  font-size: larger;
+}
+
+.signup-outer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 3em;
+}
+
+.signup-inner-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: solid 1px rgb(188, 119, 253);
+  border-radius: 15px;
+  padding: 2.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 360px;
+}
+
+.signup-label {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+.signup-content {
+  width: 100%;
+}
+
+.signup-content-p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.login-content-p {
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.signup-input-group {
+  margin-bottom: 0.6em;
+}
+
+.signup-content-input {
+  width: 100%;
+  border-radius: 8px;
+  border-color: rgb(188, 119, 253);
+  height: 30px;
+}
+
+.signup-submit-button {
+  border-radius: 10px;
+  background-color: rgb(188, 119, 253);
+  color: white;
+  /* height: 50px; */
+  padding: 0.8em;
+  margin-top: 0.7em;
+  border: none;
+  width: 100%;
+}
+
+.paragraph-signup {
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.5em;
+  border-top: solid 1px rgb(179, 174, 174);
+  padding: 1em;
+}
+
+.footer a {
+  color: rgb(188, 119, 253);
+}
+
+.signup-form {
+  margin-top: 1em;
+}
+
+.gmail-svg {
+  max-width: 30px;
+  margin-right: 1em;
+}
+
+.signup-with-google {
+  border-bottom: solid 1px rgb(179, 174, 174);
+}
+
+.login-with-google {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+  border-bottom: solid 1px rgb(179, 174, 174);
+  padding-right: 0.4em;
+}
+
+.gmail-inside-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1em;
+}
+
+.login-with-google-button {
+  margin-bottom: 1em;
+  background-color: white;
+  border: none;
+  color: rgb(188, 119, 253);
+  font-weight: bold;
+}
+
+.signup-submit-button {
+  border-radius: 10px;
+  background-color: rgb(188, 119, 253);
+  color: white;
+  padding: 0.5em;
+  margin-top: 0.7em;
+  border: none;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.login-footer {
+  text-align: center;
+}
+
+.login-footer a {
+  color: rgb(188, 119, 253);
+  font-weight: bold;
+}
+
+.heading {
+  font-family: "Shadows Into Light", cursive;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+
+.login-p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.8em;
+  margin-top: 0.5em;
+}
+
+.navLinks-buttons {
+  border: 0;
+  background-color: rgb(188, 119, 253);
+  color: white;
+  font-size: medium;
+}
+
+@media (min-width: 768px) {
+  .navContainer {
+    max-width: 80%;
+  }
+
+  .modal-container {
+    max-width: 100%;
+  }
+
+  .container {
+    width: 75%;
+  }
+
+  .hamburger-menu-button {
+    display: none;
+  }
+
+  .navList {
+    display: block;
+    position: static;
+    width: auto;
+  }
+  .navList ul {
+    display: flex;
+    align-items: center;
+  }
+  .navLinks {
+    padding: 0.5em 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+}
